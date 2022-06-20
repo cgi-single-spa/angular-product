@@ -1,0 +1,16 @@
+.example-card {
+    max-width: 350px;
+    margin: 30px;
+  }
+
+.cards {
+
+  display: grid;
+    
+  grid-template-columns: repeat(4, 1fr);
+    
+  grid-auto-rows: auto;
+    
+  grid-gap: 1rem;
+    
+  }
