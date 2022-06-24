@@ -11,7 +11,7 @@ export class ProductCardComponent implements OnInit {
 
   constructor(private productApi: ProductApiService) { }
 
-  products!: Product[];
+  products: Product[] = [];
 
   ngOnInit(): void {
     this.productApi.fetchProducts().subscribe((products: Product[]) => {
