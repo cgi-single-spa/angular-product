@@ -1,16 +1,38 @@
-.example-card {
-    max-width: 350px;
-    margin: 30px;
-  }
-
 .cards {
-
+  padding: 1em;
   display: grid;
-    
   grid-template-columns: repeat(4, 1fr);
-    
   grid-auto-rows: auto;
-    
   grid-gap: 1rem;
-    
-  }
+}
+.mat-card {
+  display: inline-grid;
+  padding: 2em;
+  min-width: 300px;
+}
+.mat-card-header .mat-card-title {
+  font-size: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+mat-card-header.mat-card-header {
+  height: 88px;
+}
+mat-card-content.mat-card-content p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.mat-card-image {
+  width: -webkit-fill-available;
+  margin: 0 -1.5em 2em -1.5em;
+  overflow: hidden;
+  height: 24em;
+  object-fit: scale-down;
+}
+mat-card-actions.mat-card-actions badge-button {
+  float: right;
+}
