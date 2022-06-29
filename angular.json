@@ -33,7 +33,8 @@
             "customWebpackConfig": {
               "path": "extra-webpack.config.js",
               "libraryName": "angular-product",
-              "libraryTarget": "umd"
+              "libraryTarget": "system",
+              "excludeAngularDependencies": true
             },
             "deployUrl": "http://localhost:4200/"
           },
